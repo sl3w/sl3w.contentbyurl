@@ -42,14 +42,14 @@ class sl3w_contentbyurl extends CModule
     public function InstallFiles()
     {
         CopyDirFiles(__DIR__ . '/components',
-            $_SERVER['DOCUMENT_ROOT'] . '/local/components', true, true);
+            $_SERVER['DOCUMENT_ROOT'] . '/bitrix/components', true, true);
 
         return false;
     }
 
     public function UnInstallFiles()
     {
-        DeleteDirFilesEx('/local/components/sl3w');
+        DeleteDirFilesEx('/bitrix/components/sl3w/content.by.url');
 
         return false;
     }
@@ -62,7 +62,7 @@ class sl3w_contentbyurl extends CModule
 
         RegisterModule($this->MODULE_ID);
 
-//        $this->CreateIblocks();
+        $this->CreateIblocks();
         $this->SetOptions();
         $this->InstallFiles();
 
@@ -79,7 +79,7 @@ class sl3w_contentbyurl extends CModule
         self::IncludeServiceFiles();
 
         $this->UnInstallFiles();
-//        $this->DeleteIblocks();
+        $this->DeleteIblocks();
         $this->ClearOptions();
         $this->ClearSession();
 
@@ -126,8 +126,8 @@ class sl3w_contentbyurl extends CModule
             ];
 
             if ($iblockID = Iblock::AddIblock($arFieldsForIblock)) {
-                /*$arFieldsProp = array(
-                    'NAME' => GetMessage('CONTENT_BY_URL_IBLOCK_PROP'),
+                /*$arFieldsProp = [
+                    'NAME' => Loc::getMessage('CONTENT_BY_URL_IBLOCK_PROP'),
                     'ACTIVE' => 'Y',
                     'SORT' => '100',
                     'MULTIPLE' => 'Y',
@@ -135,7 +135,7 @@ class sl3w_contentbyurl extends CModule
                     'PROPERTY_TYPE' => 'S',
                     'USER_TYPE' => 'UserID',
                     'IBLOCK_ID' => $iblockID
-                );
+                ];
                 Iblock::AddProp($arFieldsProp);*/
             } else {
                 self::ShowAdminError(Loc::getMessage('CONTENT_BY_URL_IBLOCK_NOT_INSTALLED'));
