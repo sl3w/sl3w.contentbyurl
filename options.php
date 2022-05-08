@@ -137,13 +137,7 @@ if ($request->isPost() && check_bitrix_sessid()) {
 
         foreach ($aTab['OPTIONS'] as $arOption) {
 
-            if (!is_array($arOption)) {
-
-                continue;
-            }
-
-            if ($arOption['note']) {
-
+            if (!is_array($arOption) || $arOption['note']) {
                 continue;
             }
 
@@ -151,12 +145,8 @@ if ($request->isPost() && check_bitrix_sessid()) {
 
                 $optionValue = $request->getPost($arOption[0]);
 
-                if ($arOption[0] == 'switch_on') {
-
-                    if ($optionValue == '') {
-
-                        $optionValue = 'N';
-                    }
+                if ($arOption[0] == 'switch_on' && $optionValue == '') {
+                    $optionValue = 'N';
                 }
 
                 Option::set($module_id, $arOption[0], is_array($optionValue) ? implode(',', $optionValue) : $optionValue);
