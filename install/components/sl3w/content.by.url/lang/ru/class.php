@@ -1,3 +1,3 @@
 <?php
 
-$MESS ['CONTENT_BY_URL_MODULE_NOT_INSTALLED'] = 'РњРѕРґСѓР»СЊ "РљРѕРЅС‚РµРЅС‚ СЃ РїСЂРёРІСЏР·РєРѕР№ РїРѕ URL" РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ';
+$MESS ['CONTENT_BY_URL_MODULE_NOT_INSTALLED'] = 'Модуль "Контент с привязкой по URL" не установлен';

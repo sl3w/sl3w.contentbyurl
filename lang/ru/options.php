@@ -1,23 +1,27 @@
 <?php
 
-$MESS ['CONTENT_BY_URL_OPTIONS_TAB_NAME'] = 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+$MESS ['CONTENT_BY_URL_OPTIONS_TAB_NAME'] = 'Íàñòðîéêè';
 
-$MESS ['CONTENT_BY_URL_BLOCK_COMMON'] = 'ÐžÐ±Ñ‰Ð¸Ðµ:';
-$MESS ['CONTENT_BY_URL_BLOCK_IBLOCK'] = 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°:';
+$MESS ['CONTENT_BY_URL_BLOCK_COMMON'] = 'Îáùèå:';
+$MESS ['CONTENT_BY_URL_BLOCK_IBLOCK'] = 'Íàñòðîéêè èíôîáëîêà:';
 
-$MESS ['CONTENT_BY_URL_OPTION_SWITCH_ON'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½:';
-$MESS ['CONTENT_BY_URL_OPTION_IBLOCK_ID'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº Ñ Ñ‚ÐµÐºÑÑ‚Ð°Ð¼Ð¸:';
-$MESS ['CONTENT_BY_URL_OPTION_CACHE_TIME'] = 'Ð’Ñ€ÐµÐ¼Ñ ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð´Ð°Ð½Ð½Ñ‹Ñ… (ÑÐµÐºÑƒÐ½Ð´):';
-$MESS ['CONTENT_BY_URL_OPTION_ADDITIONAL_CLASS'] = 'CSS ÐºÐ»Ð°ÑÑ Ð²Ð¾ÐºÑ€ÑƒÐ³ Ñ‚ÐµÐºÑÑ‚Ð°:';
+$MESS ['CONTENT_BY_URL_OPTION_SWITCH_ON'] = 'Ìîäóëü âêëþ÷åí:';
+$MESS ['CONTENT_BY_URL_OPTION_IBLOCK_ID'] = 'Èíôîáëîê ñ òåêñòàìè:';
+$MESS ['CONTENT_BY_URL_OPTION_CACHE_TIME'] = 'Âðåìÿ êýøèðîâàíèÿ äàííûõ (ñåêóíä):';
+$MESS ['CONTENT_BY_URL_OPTION_ADDITIONAL_CLASS'] = 'CSS êëàññ âîêðóã òåêñòà:';
 
-$MESS ['CONTENT_BY_URL_OPTION_KEY_FIELD_NAME'] = 'ÐŸÐ¾Ð»Ðµ Ð˜Ð‘, ÑÐ²Ð»ÑÑŽÑ‰ÐµÐµÑÑ ÐºÐ»ÑŽÑ‡Ð¾Ð¼ (URL):';
-$MESS ['CONTENT_BY_URL_OPTION_VALUE_FIELD_NAME'] = 'ÐŸÐ¾Ð»Ðµ/ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð˜Ð‘, ÑÐ²Ð»ÑÑŽÑ‰ÐµÐµÑÑ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸ÐµÐ¼:';
+$MESS ['CONTENT_BY_URL_OPTION_KEY_FIELD_NAME'] = 'Ïîëå ÈÁ, ÿâëÿþùååñÿ êëþ÷îì (URL):';
+$MESS ['CONTENT_BY_URL_OPTION_VALUE_FIELD_NAME'] = 'Ïîëå/ñâîéñòâî ÈÁ, ÿâëÿþùååñÿ çíà÷åíèåì:';
 
-$MESS ['CONTENT_BY_URL_SECTION_SEPARATION'] = 'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð° Ð¿Ð¾ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°Ð¼ Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐµ:';
+$MESS ['CONTENT_BY_URL_SECTION_SEPARATION'] = 'Âêëþ÷èòü ðàçäåëåíèå êîíòåíòà ïî ðàçäåëàì â èíôîáëîêå:';
 
-$MESS ['CONTENT_BY_URL_BUTTON_APPLY'] = 'ÐŸÑ€Ð¸Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ';
-$MESS ['CONTENT_BY_URL_BUTTON_DEFAULT'] = 'ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ';
+$MESS ['CONTENT_BY_URL_BUTTON_APPLY'] = 'Ïðèìåíèòü';
+$MESS ['CONTENT_BY_URL_BUTTON_DEFAULT'] = 'Ïî óìîë÷àíèþ';
 
-$MESS ['IBLOCK_ERROR'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ Ð±Ð»Ð¾ÐºÐ¸" Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½';
+$MESS ['IBLOCK_ERROR'] = 'Ìîäóëü "Èíôîðìàöèîííûå áëîêè" íå óñòàíîâëåí';
 
-$MESS ['CONTENT_BY_URL_SAVE_AFTER_CHANGE_IBLOCK'] = 'Ð”Ð»Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑÐ²Ð¾Ð¹ÑÑ‚Ð² Ð¿Ð¾ÑÐ»Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° Ð½ÑƒÐ¶Ð½Ð¾ ÑÐ½Ð°Ñ‡Ð°Ð»Ð° Ð¿Ñ€Ð¸Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸.';
+$MESS ['CONTENT_BY_URL_SAVE_AFTER_CHANGE_IBLOCK'] = 'Äëÿ èçìåíåíèÿ ñâîéñòâ ïîñëå ïåðåêëþ÷åíèÿ èíôîáëîêà íóæíî ñíà÷àëà ïðèìåíèòü íàñòðîéêè.';
+
+$MESS ['CONTENT_BY_URL_OPTION_KEY_OPTION_NAME'] = '[NAME] Íàçâàíèå';
+$MESS ['CONTENT_BY_URL_OPTION_KEY_OPTION_PREVIEW_TEXT'] = '[PREVIEW_TEXT] Îïèñàíèå äëÿ àíîíñà';
+$MESS ['CONTENT_BY_URL_OPTION_KEY_OPTION_DETAIL_TEXT'] = '[DETAIL_TEXT] Äåòàëüíîå îïèñàíèå';

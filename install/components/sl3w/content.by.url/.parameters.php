@@ -41,9 +41,9 @@ while ($arIBlock = $dbIBlocks->GetNext()) {
 
 $selectFields = [
     'MODULE' => Loc::getMessage('FROM_MODULE'),
-    'NAME' => '[NAME] ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ',
-    'PREVIEW_TEXT' => '[PREVIEW_TEXT] ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð´Ð»Ñ Ð°Ð½Ð¾Ð½ÑÐ°',
-    'DETAIL_TEXT' => '[DETAIL_TEXT] Ð”ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ',
+    'NAME' => '[NAME] Íàçâàíèå',
+    'PREVIEW_TEXT' => '[PREVIEW_TEXT] Îïèñàíèå äëÿ àíîíñà',
+    'DETAIL_TEXT' => '[DETAIL_TEXT] Äåòàëüíîå îïèñàíèå',
 ];
 
 $selectFieldsAndProps = $selectFields;
@@ -66,7 +66,7 @@ if ($iblockId = intval($arCurrentValues['IBLOCK_ID'])) {
     }
 }
 
-//Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
+//ôîðìèðîâàíèå ìàññèâà ïàðàìåòðîâ
 $arComponentParameters = [
     'GROUPS' => [
         'RESET' => [

@@ -1,16 +1,16 @@
 <?php
 
-$MESS ['CONTENT_BY_URL_MODULE_NAME'] = 'ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ñ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¾Ð¹ Ð¿Ð¾ URL';
-$MESS ['CONTENT_BY_URL_MODULE_DESC'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ñ€Ð°Ð·Ð¼ÐµÑ‰Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ð² Ð»ÑŽÐ±Ð¾Ð¼ Ð¼ÐµÑÑ‚Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ð½ Ðº ÐºÐ¾Ð½ÐºÑ€ÐµÑ‚Ð½Ð¾Ð¼Ñƒ URL-Ð°Ð´Ñ€ÐµÑÑƒ ÑÐ°Ð¹Ñ‚Ð°';
+$MESS ['CONTENT_BY_URL_MODULE_NAME'] = 'Êîíòåíò ñ ïðèâÿçêîé ïî URL';
+$MESS ['CONTENT_BY_URL_MODULE_DESC'] = 'Ìîäóëü ïîçâîëÿåò ðàçìåùàòü â ëþáîì ìåñòå ñòðàíèöû êîíòåíò, êîòîðûé ïðèâÿçàí ê êîíêðåòíîìó URL-àäðåñó ñàéòà';
 $MESS ['CONTENT_BY_URL_PARTNER_NAME'] = 'SL3W';
 $MESS ['CONTENT_BY_URL_PARTNER_URI'] = 'https://github.com/sl3w/sl3w.contentbyurl';
 
-$MESS ['CONTENT_BY_URL_INSTALL_TITLE'] = 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ';
-$MESS ['CONTENT_BY_URL_UNINSTALL_TITLE'] = 'Ð”ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ';
+$MESS ['CONTENT_BY_URL_INSTALL_TITLE'] = 'Óñòàíîâêà ìîäóëÿ';
+$MESS ['CONTENT_BY_URL_UNINSTALL_TITLE'] = 'Äåèíñòàëëÿöèÿ ìîäóëÿ';
 
-$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_NAME'] = 'ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ñ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¾Ð¹ Ð¿Ð¾ URL';
-$MESS ['CONTENT_BY_URL_IBLOCK_NAME'] = 'ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ñ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¾Ð¹ Ð¿Ð¾ URL';
+$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_NAME'] = 'Êîíòåíò ñ ïðèâÿçêîé ïî URL';
+$MESS ['CONTENT_BY_URL_IBLOCK_NAME'] = 'Êîíòåíò ñ ïðèâÿçêîé ïî URL';
 
-$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_NOT_INSTALLED'] = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ Ñ‚Ð¸Ð¿Ð° Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°';
-$MESS ['CONTENT_BY_URL_IBLOCK_NOT_INSTALLED'] = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°';
-$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_DELETE_ERROR'] = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° Ð¸ Ñ‚Ð¸Ð¿Ð°';
+$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_NOT_INSTALLED'] = 'Îøèáêà ïðè óñòàíîâêå òèïà èíôîáëîêà';
+$MESS ['CONTENT_BY_URL_IBLOCK_NOT_INSTALLED'] = 'Îøèáêà ïðè óñòàíîâêå èíôîáëîêà';
+$MESS ['CONTENT_BY_URL_IBLOCK_TYPE_DELETE_ERROR'] = 'Îøèáêà ïðè óäàëåíèè èíôîáëîêà è òèïà';

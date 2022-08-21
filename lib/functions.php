@@ -42,7 +42,7 @@ if (!function_exists('check_include_module')) {
         $errors = [];
         foreach ($modules as $module) {
             if (!Loader::includeModule($module)) {
-                $errors[] = sprintf('ĞÑˆĞ¸Ğ±ĞºĞ° Ğ¿Ñ€Ğ¸ Ğ¿Ğ¾Ğ´ĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğ¸ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ "%s"', $module);
+                $errors[] = sprintf('Îøèáêà ïğè ïîäêëş÷åíèè ìîäóëÿ "%s"', $module);
             }
         }
 
@@ -110,8 +110,8 @@ if (!function_exists('to_lower')) {
 
 if (!function_exists('array_get')) {
     /**
-     * ĞŸĞ¾Ğ»ÑƒÑ‡Ğ°ĞµÑ‚ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ° Ğ¿Ğ¾ ĞºĞ»ÑÑ‡Ñƒ.
-     * Ğ˜Ğ¼ĞµĞµÑ‚ÑÑ Ğ²Ğ¾Ğ·Ğ¼Ğ¾Ğ¶Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ÑŒ dot-Ğ½Ğ¾Ñ‚Ğ°Ñ†Ğ¸Ñ (Ñ‚.Ğµ. Ğ¿Ğ¾ ĞºĞ»ÑÑ‡Ñƒ `foo.bar` Ğ¸Ğ· Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ° `['foo' => ['bar' => 100]]` Ğ´Ğ¾ÑÑ‚Ğ°Ğ½ĞµÑ‚ÑÑ 100)
+     * Ïîëó÷àåò ıëåìåíò ìàññèâà ïî êëş÷ó.
+     * Èìååòñÿ âîçìîæíîñòü èñïîëüçîâàòü dot-íîòàöèş (ò.å. ïî êëş÷ó `foo.bar` èç ìàññèâà `['foo' => ['bar' => 100]]` äîñòàíåòñÿ 100)
      *
      * @param array $array
      * @param string $key

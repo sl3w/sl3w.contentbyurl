@@ -25,9 +25,9 @@ while ($arIBlock = $dbIBlocks->GetNext()) {
 }
 
 $selectFields = [
-    'NAME' => '[NAME] Название',
-    'PREVIEW_TEXT' => '[PREVIEW_TEXT] Описание для анонса',
-    'DETAIL_TEXT' => '[DETAIL_TEXT] Детальное описание',
+    'NAME' => Loc::getMessage('CONTENT_BY_URL_OPTION_KEY_OPTION_NAME'),
+    'PREVIEW_TEXT' => Loc::getMessage('CONTENT_BY_URL_OPTION_KEY_OPTION_PREVIEW_TEXT'),
+    'DETAIL_TEXT' => Loc::getMessage('CONTENT_BY_URL_OPTION_KEY_OPTION_DETAIL_TEXT'),
 ];
 
 $selectFieldsAndProps = $selectFields;
