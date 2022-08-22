@@ -8,7 +8,7 @@ if (!function_exists('get_iblock_id_by_code')) {
     {
         $iblocksId = session_get('iblock_id');
 
-        if (array_key_exists($code, $iblocksId)) {
+        if ($iblocksId && array_key_exists($code, $iblocksId)) {
             return $iblocksId[$code];
         }
 

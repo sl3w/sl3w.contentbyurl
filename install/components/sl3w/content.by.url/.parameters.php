@@ -41,16 +41,16 @@ while ($arIBlock = $dbIBlocks->GetNext()) {
 
 $selectFields = [
     'MODULE' => Loc::getMessage('FROM_MODULE'),
-    'NAME' => '[NAME] Название',
-    'PREVIEW_TEXT' => '[PREVIEW_TEXT] Описание для анонса',
-    'DETAIL_TEXT' => '[DETAIL_TEXT] Детальное описание',
+    'NAME' => Loc::getMessage('OPTION_KEY_OPTION_NAME'),
+    'PREVIEW_TEXT' => Loc::getMessage('OPTION_KEY_OPTION_PREVIEW_TEXT'),
+    'DETAIL_TEXT' => Loc::getMessage('OPTION_KEY_OPTION_DETAIL_TEXT'),
 ];
 
 $selectFieldsAndProps = $selectFields;
 
 $sections = ['0' => Loc::getMessage('NO_SECTION')];
 
-if ($iblockId = intval($arCurrentValues['IBLOCK_ID'])) {
+if ($iblockId = intval($arCurrentValues['IBLOCK_ID']) ?: Settings::get('iblock_id')) {
     $propsRes = CIBlock::GetProperties($iblockId);
 
     while ($prop = $propsRes->Fetch()) {
