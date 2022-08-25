@@ -10,4 +10,5 @@
 $APPLICATION->IncludeComponent("sl3w:content.by.url", "", [], false);
 ```
 
+
 Ссылка на модуль в Маркетплейсе: http://marketplace.1c-bitrix.ru/solutions/sl3w.contentbyurl/
