@@ -21,3 +21,7 @@ if ($errorException = $APPLICATION->GetException()) {
     <input type='hidden' name='lang' value='<?= LANG; ?>'>
     <input type='submit' name='' value='<?= Loc::getMessage('CONTENT_BY_URL_STEP_BACK'); ?>'>
 <form>
+
+<a href="/bitrix/admin/settings.php?lang=ru&mid=sl3w.contentbyurl">
+    <input type='button' name='' value='<?= Loc::getMessage('CONTENT_BY_URL_STEP_GO_TO_SETTINGS'); ?>'>
+</a>

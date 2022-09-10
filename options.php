@@ -145,7 +145,7 @@ if ($request->isPost() && check_bitrix_sessid()) {
 
                 $optionValue = $request->getPost($arOption[0]);
 
-                if ($arOption[0] == 'switch_on' && $optionValue == '') {
+                if ($arOption[3][0] == 'checkbox' && $optionValue == '') {
                     $optionValue = 'N';
                 }
 
