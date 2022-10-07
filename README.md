@@ -4,7 +4,7 @@
 
 ## Минимальный код вызова компонента
 ```
-$APPLICATION->IncludeComponent("sl3w:content.by.url", "", [], false);
+$APPLICATION->IncludeComponent("sl3w:content.by.url", "");
 ```
 
 
