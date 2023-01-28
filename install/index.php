@@ -1,7 +1,7 @@
 <?php
 
-use ContentByUrl\Iblock;
-use ContentByUrl\Settings;
+use Sl3w\ContentByUrl\Iblock;
+use Sl3w\ContentByUrl\Settings;
 
 use Bitrix\Main\Localization\Loc;
 

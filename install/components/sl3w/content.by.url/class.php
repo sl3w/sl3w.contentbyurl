@@ -1,7 +1,7 @@
 <?php
 
-use ContentByUrl\Iblock;
-use ContentByUrl\Settings;
+use Sl3w\ContentByUrl\Iblock;
+use Sl3w\ContentByUrl\Settings;
 use Bitrix\Main\Localization\Loc;
 
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
@@ -43,7 +43,7 @@ class ContentByUrlComponent extends \CBitrixComponent
 
         $valueFieldName = to_upper($this->paramOrFromModule('VALUE_FIELD_NAME'));
 
-        $sectionId = intval($this->arParams['SECTION_ID']) && Settings::get('section_separation') == 'Y' ? $this->arParams['SECTION_ID'] : '';
+        $sectionId = intval($this->arParams['SECTION_ID']) && Settings::yes('section_separation') ? $this->arParams['SECTION_ID'] : '';
 
         $element = Iblock::GetElementCurrentUrl($iblockId, $keyFieldName, $this->arParams['CURRENT_PAGE'], $valueFieldName, $sectionId);
 
@@ -71,7 +71,7 @@ class ContentByUrlComponent extends \CBitrixComponent
 
     public function executeComponent()
     {
-        if (Settings::get('switch_on') != 'Y') {
+        if (!Settings::yes('switch_on')) {
             return false;
         }
 

@@ -15,6 +15,7 @@ Loader::includeModule($module_id);
 
 if (!CModule::IncludeModule('iblock')) {
     ShowMessage(GetMessage('IBLOCK_ERROR'));
+
     return false;
 }
 
@@ -40,7 +41,7 @@ while ($prop = $propsRes->Fetch()) {
     }
 }
 
-$aTabs = array(
+$aTabs = [
     [
         'DIV' => 'edit',
         'TAB' => Loc::getMessage('CONTENT_BY_URL_OPTIONS_TAB_NAME'),
@@ -93,7 +94,7 @@ $aTabs = array(
             ],
         ]
     ]
-);
+];
 
 $tabControl = new CAdminTabControl(
     'tabControl',
@@ -158,5 +159,5 @@ if ($request->isPost() && check_bitrix_sessid()) {
         }
     }
 
-    LocalRedirect($APPLICATION->GetCurPage() . '?mid=' . $module_id . '&lang=' . LANG);
+    LocalRedirect($APPLICATION->GetCurPage() . '?mid=' . $module_id . '&lang=' . LANG . '&mid_menu=1');
 }

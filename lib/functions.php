@@ -12,7 +12,7 @@ if (!function_exists('get_iblock_id_by_code')) {
             return $iblocksId[$code];
         }
 
-        check_include_module('iblock');
+        include_modules('iblock');
 
         $iBlock = IblockTable::getRow([
             'filter' => ['=CODE' => $code],
@@ -28,29 +28,21 @@ if (!function_exists('get_iblock_id_by_code')) {
     }
 }
 
-if (!function_exists('check_include_module')) {
-    function check_include_module($modules, $throwable = true)
+if (!function_exists('array_wrap')) {
+    function array_wrap($value)
     {
-        if (is_string($modules)) {
-            $modules = [$modules];
-        }
+        return is_array($value) ? $value : [$value];
+    }
+}
 
-        if (!is_array($modules)) {
-            return [];
-        }
+if (!function_exists('include_modules')) {
+    function include_modules($modulesName)
+    {
+        $modulesName = array_wrap($modulesName);
 
-        $errors = [];
-        foreach ($modules as $module) {
-            if (!Loader::includeModule($module)) {
-                $errors[] = sprintf('Ошибка при подключении модуля "%s"', $module);
-            }
+        foreach ($modulesName as $moduleName) {
+            Loader::includeModule($moduleName);
         }
-
-        if (!empty($errors) && $throwable) {
-            throw new Exception(implode(', ', $errors));
-        }
-
-        return $errors;
     }
 }
 
@@ -109,15 +101,6 @@ if (!function_exists('to_lower')) {
 }
 
 if (!function_exists('array_get')) {
-    /**
-     * Получает элемент массива по ключу.
-     * Имеется возможность использовать dot-нотацию (т.е. по ключу `foo.bar` из массива `['foo' => ['bar' => 100]]` достанется 100)
-     *
-     * @param array $array
-     * @param string $key
-     * @param mixed|null $default
-     * @return mixed|null
-     */
     function array_get($array, $key, $default = null)
     {
         if (!is_array($array)) {

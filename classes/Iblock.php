@@ -1,6 +1,6 @@
 <?php
 
-namespace ContentByUrl;
+namespace Sl3w\ContentByUrl;
 
 use CIBlock;
 use CIBlockProperty;
@@ -10,7 +10,7 @@ class Iblock
 {
     public static function AddIblockType($arFieldsIBT)
     {
-        check_include_module('iblock');
+        include_modules('iblock');
 
         $iblockType = $arFieldsIBT['ID'];
 
@@ -18,8 +18,11 @@ class Iblock
 
         if (!$ar_iblock_type = $db_iblock_type->Fetch()) {
             $obBlocktype = new CIBlockType;
+
             global_db()->StartTransaction();
+
             $resIBT = $obBlocktype->Add($arFieldsIBT);
+
             if (!$resIBT) {
                 global_db()->Rollback();
                 echo 'Error: ' . $obBlocktype->LAST_ERROR;
@@ -36,7 +39,7 @@ class Iblock
 
     public static function AddIblock($arFieldsIB)
     {
-        check_include_module('iblock');
+        include_modules('iblock');
 
         $iblockCode = $arFieldsIB['CODE'];
         $iblockType = $arFieldsIB['TYPE'];
@@ -44,6 +47,7 @@ class Iblock
         $ib = new CIBlock;
 
         $resIBE = CIBlock::GetList([], ['TYPE' => $iblockType, 'CODE' => $iblockCode]);
+
         if ($ar_resIBE = $resIBE->Fetch()) {
             return false;
         } else {
@@ -56,7 +60,7 @@ class Iblock
 
     public static function AddProp($arFieldsProp)
     {
-        check_include_module('iblock');
+        include_modules('iblock');
 
         $ibp = new CIBlockProperty;
         $propID = $ibp->Add($arFieldsProp);
@@ -66,9 +70,10 @@ class Iblock
 
     public static function DeleteIblock($iBlockCode)
     {
-        check_include_module('iblock');
+        include_modules('iblock');
 
         global_db()->StartTransaction();
+
         if (!CIBlockType::Delete($iBlockCode)) {
             global_db()->Rollback();
 
@@ -92,7 +97,7 @@ class Iblock
 
     public static function GetElement($filter = [], $select = [], $sort = [])
     {
-        check_include_module('iblock');
+        include_modules('iblock');
 
         return \CIBlockElement::GetList($sort, $filter, false, false, $select)->Fetch();
     }

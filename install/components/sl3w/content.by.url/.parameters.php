@@ -1,7 +1,7 @@
 <?php
 
 use Bitrix\Main\Localization\Loc;
-use ContentByUrl\Settings;
+use Sl3w\ContentByUrl\Settings;
 
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
@@ -15,7 +15,7 @@ if (!CModule::IncludeModule('sl3w.contentbyurl')) {
     return false;
 }
 
-/*$dbIBlockTypes = CIBlockType::GetList(array('SORT'=>'ASC'), array('ACTIVE'=>'Y'));
+/*$dbIBlockTypes = CIBlockType::GetList(['SORT' => 'ASC'], ['ACTIVE' => 'Y']);
 while ($arIBlockTypes = $dbIBlockTypes->GetNext())
 {
     $paramIBlockTypes[$arIBlockTypes['ID']] = $arIBlockTypes['ID'];
@@ -75,7 +75,7 @@ $arComponentParameters = [
         ],
     ],
     'PARAMETERS' => [
-        /*'IBLOCK_TYPE' => array(
+        /*'IBLOCK_TYPE' => [
             'PARENT' => 'BASE',
             'NAME' => Loc::getMessage('IBLOCK_TYPE'),
             'TYPE' => 'LIST',
@@ -83,7 +83,7 @@ $arComponentParameters = [
             'REFRESH' => 'Y',
             'MULTIPLE' => 'N',
             'ADDITIONAL_VALUES' => 'Y',
-        ),*/
+        ],*/
         'IBLOCK_ID' => [
             'PARENT' => 'RESET',
             'NAME' => Loc::getMessage('IBLOCK_ID'),
